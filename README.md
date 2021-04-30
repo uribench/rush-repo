@@ -17,9 +17,9 @@ Add this repository
 --------------------------------------------------
 
 ```shell
-$ rush clone GITHUB_USER      # download the repository
-$ rush get GITHUB_USER:hello  # test that it is working
-$ rush list GITHUB_USER       # see package list
+$ rush clone uribench      # download the repository
+$ rush get uribench:hello  # test that it is working
+$ rush list uribench       # see package list
 ```
 
 [rush-cli]: https://github.com/DannyBen/rush-cli

@@ -1,4 +1,15 @@
-Shows how to run another command from the same repository
+A meta package executing several configuration packages
 
-This technique can be useful to create a "meta package" that installs
-other packages from the same repository.
+Running this will install:
+
+- dannyben:bashrc
+- dannyben:dircolors
+- dannyben:exrc
+- dannyben:inputrc
+- dannyben:irbrc
+- dannyben:alf
+- dannyben:opcode
+- dannyben:direnv
+- dannyben:my/ssh-agent
+- cdpath
+- gitconfig

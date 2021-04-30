@@ -1,6 +1,22 @@
 #!/usr/bin/env bash
-set -e
+source ../common.sh
 
-# Execute another package, using the $REPO variable, which will hold the 
-# name of the repository, as configured on the user's machine.
-rush get $REPO:hello
+say "installing essential rush packages"
+
+# essential packages copied from dannyben:bootstrap
+needs dannyben:bashrc
+needs dannyben:dircolors
+needs dannyben:exrc
+needs dannyben:inputrc
+needs dannyben:irbrc
+needs dannyben:alf
+
+# additional essential packages 
+needs dannyben:opcode
+needs dannyben:direnv
+needs dannyben:my/ssh-agent
+needs cdpath
+needs gitconfig
+
+say "bootstrap complete"
+attention "you may need to restart your session"

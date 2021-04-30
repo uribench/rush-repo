@@ -12,14 +12,6 @@ _  /     /_/    \__,_/ /____/ /_/ /_/
 
 This is my rush repo for use with the [rush package manager][rush-cli].
 
-
-Add this repository
---------------------------------------------------
-
-```shell
-$ rush clone uribench      # download the repository
-$ rush get uribench:hello  # test that it is working
-$ rush list uribench       # see package list
-```
+---
 
 [rush-cli]: https://github.com/DannyBen/rush-cli

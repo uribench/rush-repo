@@ -14,7 +14,7 @@ needs dannyben:alf
 # additional essential packages 
 needs dannyben:opcode
 needs dannyben:direnv
-needs dannyben:my/ssh-agent
+needs dannyben:ssh-agent
 needs cdpath
 needs gitconfig
 

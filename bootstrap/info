@@ -10,6 +10,6 @@ Running this will install:
 - dannyben:alf
 - dannyben:opcode
 - dannyben:direnv
-- dannyben:my/ssh-agent
+- dannyben:ssh-agent
 - cdpath
 - gitconfig

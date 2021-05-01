@@ -1,15 +1,1 @@
-A meta package executing several configuration packages
-
-Running this will install:
-
-- dannyben:bashrc
-- dannyben:dircolors
-- dannyben:exrc
-- dannyben:inputrc
-- dannyben:irbrc
-- dannyben:alf
-- dannyben:opcode
-- dannyben:direnv
-- dannyben:ssh-agent
-- cdpath
-- gitconfig
+A meta package executing several essential packages

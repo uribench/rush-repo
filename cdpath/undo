@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+source ../common.sh
+say "removing cdpath.bashrc"
+rm -f ~/.bashrc.d/cdpath.bashrc

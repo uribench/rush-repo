@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+source ../common.sh
+
+rush undo dannyben:alf
+
+say "removing ~/.alfrc"
+rm ~/.alfrc

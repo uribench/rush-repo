@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+source ../common.sh
+
+needs dannyben:alf
+
+say "updating ~/.alfrc"
+echo /vagrant/bash/alf-conf > ~/.alfrc
+alf save
+

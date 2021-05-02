@@ -9,7 +9,6 @@ needs dannyben:dircolors
 needs dannyben:exrc
 needs dannyben:inputrc
 needs dannyben:irbrc
-needs dannyben:alf
 
 # additional essential packages 
 needs dannyben:opcode
@@ -17,6 +16,7 @@ needs dannyben:direnv
 needs dannyben:ssh-agent
 needs cdpath
 needs gitconfig
+needs alf
 
 say "bootstrap complete"
 attention "you may need to restart your session"

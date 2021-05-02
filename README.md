@@ -11,7 +11,9 @@ _  /     /_/    \__,_/ /____/ /_/ /_/
 ```
 
 This is my rush repo for use with the [rush package manager][rush-cli].
+It was created using [this GitHub template][template] and then customized for personal use.
 
 ---
 
 [rush-cli]: https://github.com/DannyBen/rush-cli
+[template]: https://github.com/DannyBen/rush-repo-template

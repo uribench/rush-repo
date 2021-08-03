@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+source ../common.sh
+
+say "installing virtual drivers"
+# check for instance new drivers under: /lib/modules/<kernel-version>/kernel/drivers/usb/
+sudo apt-get install linux-image-extra-virtual

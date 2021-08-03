@@ -4,19 +4,20 @@ source ../common.sh
 say "installing essential rush packages"
 
 # essential packages copied from dannyben:bootstrap
-needs dannyben:bashrc
-needs dannyben:dircolors
-needs dannyben:exrc
-needs dannyben:inputrc
-needs dannyben:irbrc
+needs bashrc-global
+needs dircolors
+needs exrc
+needs inputrc
+needs irbrc
 
 # additional essential packages 
-needs dannyben:opcode
-needs dannyben:direnv
-needs dannyben:ssh-agent
+needs opcode
+needs direnv
+needs ssh-agent
 needs cdpath
 needs gitconfig
 needs alf
+needs locale
 
 say "bootstrap complete"
 attention "you may need to restart your session"

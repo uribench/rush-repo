@@ -31,12 +31,23 @@ command_exist() {
 }
 
 needs() {
-  say "installing prerequisites"
+  say "installing dependencies"
   for pack in $* ; do
     if [[ $pack =~ .*:.* ]]; then
       rush get "$pack" --clone
     else
       rush get "$REPO:$pack"
+    fi
+  done
+}
+
+discard() {
+  say "uninstalling dependencies"
+  for pack in $* ; do
+    if [[ $pack =~ .*:.* ]]; then
+      rush undo "$pack"
+    else
+      rush undo "$REPO:$pack"
     fi
   done
 }
@@ -63,10 +74,15 @@ github_install_helper() {
 # Install a .deb package from a URL using apt
 apt_install_deb() {
   url="$1"
-  tmpdir=$(mktemp -d)
+  tmpdir=$(temp_dir)
   pushd "$tmpdir"
   wget -O package.deb "$url"
-  sudo apt-get -yf install package.deb
+  sudo apt-get -yf install ./package.deb
   popd
   rm -rf "$tmpdir"
+}
+
+# Get a standardized tmp dir
+temp_dir() {
+  mktemp -d -t rush-XXX
 }

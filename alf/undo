@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 source ../common.sh
 
-rush undo dannyben:alf
-
-say "removing ~/.alfrc"
-rm ~/.alfrc
+say "uninstalling alf"
+sudo rm /usr/local/bin/alf

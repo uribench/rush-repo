@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 source ../common.sh
 
-needs dannyben:alf
+say "installing alf (github)"
+sudo wget -qO /usr/local/bin/alf https://raw.githubusercontent.com/DannyBen/alf/master/alf
+sudo chmod +x /usr/local/bin/alf
 
 say "updating ~/.alfrc"
 echo /vagrant/bash/alf-conf > ~/.alfrc
 alf save
 
+alf --version

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+source ../common.sh
+
+say "installing Tangram Python library"
+# Upgrade pip to resolve the installation issue of "Could not find a version that satisfies the requirement..."
+# pip install --upgrade pip
+
+# Install Tangram Python library
+pip install tangram

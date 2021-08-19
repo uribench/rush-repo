@@ -20,4 +20,4 @@ needs alf
 needs locale
 
 say "bootstrap complete"
-attention "restart your session or source ~/.bashrc to apply changes"
+attention "restart your session to apply changes"

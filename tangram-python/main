@@ -7,7 +7,7 @@ say "installing Tangram Python library"
 pip install --upgrade pip
 
 # Apply changes
-source ~/.profile
+source "$HOME/.profile"
 
 # Install Tangram Python library
 pip install tangram

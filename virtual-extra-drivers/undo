@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+source ../common.sh
+
+say "uninstalling virtual drivers"
+sudo apt-get remove -y linux-image-extra-virtual
